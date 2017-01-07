@@ -1,12 +1,12 @@
 ---
-title: How manage your Hexo blog source code
+title: How to manage your Hexo blog source code
 date: 2017-01-07 11:34:53
 tags:
 ---
 
 [Demo Repository](https://github.com/shushanxingzhe/shushanxingzhe.github.io/tree/sourcecode)
 
-## How add a new branch to save hexo source code ##
+## How to add a new branch to save hexo source code ##
 
 ```
 cd /path/to/you/hexo
