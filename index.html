@@ -228,6 +228,130 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/07/How-manage-your-Hexo-blog-source-code/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Louis">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/5352463">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Louis's Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Louis's Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/01/07/How-manage-your-Hexo-blog-source-code/" itemprop="url">
+                  How manage your Hexo blog source code
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-07T11:34:53+08:00">
+                2017-01-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="How-add-a-new-branch-to-save-hexo-source-code"><a href="#How-add-a-new-branch-to-save-hexo-source-code" class="headerlink" title="How add a new branch to save hexo source code"></a>How add a new branch to save hexo source code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cd /path/to/you/hexo</div><div class="line">git init</div><div class="line">git checkout -b sourcecode</div><div class="line">git remote add https://github.com/shushanxingzhe/shushanxingzhe.github.io.git</div><div class="line">git add .</div><div class="line">git commit -m &apos;save source code&apos;</div><div class="line">git push origin sourcecode:sourcecode</div></pre></td></tr></table></figure>
+<h2 id="Get-source-from-Github-and-add-new-blog"><a href="#Get-source-from-Github-and-add-new-blog" class="headerlink" title="Get source from Github and add new blog"></a>Get source from Github and add new blog</h2><h3 id="Clone-source"><a href="#Clone-source" class="headerlink" title="Clone source"></a>Clone source</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone -b sourcecode https://github.com/shushanxingzhe/shushanxingzhe.github.io.git github.io</div></pre></td></tr></table></figure>
+<h3 id="Update-dependency"><a href="#Update-dependency" class="headerlink" title="Update dependency"></a>Update dependency</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd github.io</div><div class="line">npm update</div></pre></td></tr></table></figure>
+<h3 id="Create-New-Blog"><a href="#Create-New-Blog" class="headerlink" title="Create New Blog"></a>Create New Blog</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;New Blog Title Here&quot;</div><div class="line">#write you blog in the source/_posts directory</div><div class="line">hexo s</div><div class="line">#run server on local,and check it</div></pre></td></tr></table></figure>
+<h3 id="Generate-and-Deploy"><a href="#Generate-and-Deploy" class="headerlink" title="Generate and Deploy"></a>Generate and Deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure>
+<h3 id="Update-source-code-to-Github"><a href="#Update-source-code-to-Github" class="headerlink" title="Update source code to Github"></a>Update source code to Github</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &apos;add new blog&apos;</div><div class="line">git push</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/30/Useful-PHP-Extension/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -499,7 +623,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -543,7 +667,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

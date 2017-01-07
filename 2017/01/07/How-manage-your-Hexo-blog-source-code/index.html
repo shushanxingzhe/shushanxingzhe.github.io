@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="12345678910111213141516171819202122232425find . -type d -name &quot;.svn&quot;|xargs rm -rf            删除当前目录及子目录下的svn文件svn st | awk &apos;&amp;#123;if ($1 == &quot;?&quot;) &amp;#123;print $2&amp;#125; &amp;#125;&apos; | xargs svn add        svn">
+<meta name="description" content="How add a new branch to save hexo source code1234567cd /path/to/you/hexogit initgit checkout -b sourcecodegit remote add https://github.com/shushanxingzhe/shushanxingzhe.github.io.gitgit add .git comm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Efficient Command">
-<meta property="og:url" content="http://yoursite.com/2016/12/30/efficient-command/index.html">
+<meta property="og:title" content="How manage your Hexo blog source code">
+<meta property="og:url" content="http://yoursite.com/2017/01/07/How-manage-your-Hexo-blog-source-code/index.html">
 <meta property="og:site_name" content="Louis's Blog">
-<meta property="og:description" content="12345678910111213141516171819202122232425find . -type d -name &quot;.svn&quot;|xargs rm -rf            删除当前目录及子目录下的svn文件svn st | awk &apos;&amp;#123;if ($1 == &quot;?&quot;) &amp;#123;print $2&amp;#125; &amp;#125;&apos; | xargs svn add        svn">
-<meta property="og:updated_time" content="2016-12-30T09:19:21.887Z">
+<meta property="og:description" content="How add a new branch to save hexo source code1234567cd /path/to/you/hexogit initgit checkout -b sourcecodegit remote add https://github.com/shushanxingzhe/shushanxingzhe.github.io.gitgit add .git comm">
+<meta property="og:updated_time" content="2017-01-07T03:40:47.757Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Efficient Command">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425find . -type d -name &quot;.svn&quot;|xargs rm -rf            删除当前目录及子目录下的svn文件svn st | awk &apos;&amp;#123;if ($1 == &quot;?&quot;) &amp;#123;print $2&amp;#125; &amp;#125;&apos; | xargs svn add        svn">
+<meta name="twitter:title" content="How manage your Hexo blog source code">
+<meta name="twitter:description" content="How add a new branch to save hexo source code1234567cd /path/to/you/hexogit initgit checkout -b sourcecodegit remote add https://github.com/shushanxingzhe/shushanxingzhe.github.io.gitgit add .git comm">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/12/30/efficient-command/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/07/How-manage-your-Hexo-blog-source-code/"/>
 
 
 
 
 
-  <title> Efficient Command | Louis's Blog </title>
+  <title> How manage your Hexo blog source code | Louis's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -230,7 +230,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/30/efficient-command/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/07/How-manage-your-Hexo-blog-source-code/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Louis">
@@ -254,7 +254,7 @@
             
             
               
-                Efficient Command
+                How manage your Hexo blog source code
               
             
           </h1>
@@ -269,8 +269,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-30T17:19:21+08:00">
-                2016-12-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-07T11:34:53+08:00">
+                2017-01-07
               </time>
             
 
@@ -305,7 +305,12 @@
       
 
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">find . -type d -name <span class="string">".svn"</span>|xargs rm -rf            删除当前目录及子目录下的svn文件</div><div class="line">svn st | awk <span class="string">'&#123;if ($1 == "?") &#123;print $2&#125; &#125;'</span> | xargs svn add        svn添加所有新增文件</div><div class="line">find . -type d -exec chmod 700 &#123;&#125; \;                   修改所有目录访问权限</div><div class="line">find . -type f -exec chmod 600 &#123;&#125; \;                    修改所有文件访问权限</div><div class="line">find . -name <span class="string">"*.php"</span> -exec php  &#123;&#125; \;                    执行所有的php文件</div><div class="line">grep -rli <span class="string">"helper('itags')"</span> * | xargs -i@ sed -i <span class="string">"s/helper('itags')/helper('core')/g"</span> @                将所有文件中包含的某字符串替换成另一字符串</div><div class="line">grep -rli  --include=*.php.dec  <span class="string">'?&gt;&lt;?php'</span> . | xargs -i@ sed -i <span class="string">"s/?&gt;&lt;?php/&lt;?php/g"</span> @ </div><div class="line"></div><div class="line">pcregrep -MHrin --color <span class="string">"addOrder.*\n.*1442470135100001"</span> .      多行搜索（跨行）</div><div class="line"><span class="built_in">set</span> quote=<span class="string">"'"</span> ; phpgrep -i <span class="string">'\(select\|update\|delete\|insert\).*;\("\|$&#123;quote&#125;\)'</span>  . 搜索以分号;结尾的SQL语句</div><div class="line"><span class="built_in">set</span> quote=<span class="string">"'"</span> ; phpgrep -i <span class="string">'\(select\|update\|delete\|insert\).*[^;]\("\|$&#123;quote&#125;\)'</span>  . 搜索不以分号;结尾的SQL语句</div><div class="line"></div><div class="line">find . -name <span class="string">'*.php.dec'</span> -exec sh -c <span class="string">'mv $0 $&#123;0/.php.dec/.php&#125;;'</span>  &#123;&#125; \;                搜索文件并重命名</div><div class="line">find . -name <span class="string">'article*'</span> | sed <span class="_">-e</span> <span class="string">"p;s/article/blog/"</span> | xargs -n2 mv                       搜索文件并重命名(通用性强)</div><div class="line"></div><div class="line">find . -name <span class="string">'*respond*'</span> -exec sh -c <span class="string">' grep -Hrin --color --exclude-dir=.svn "1442299522100003" $0'</span>  &#123;&#125; \;     搜索文件 并查找文件中的的字符串</div><div class="line">ps --no-headers -o <span class="string">"rss,cmd"</span> -C php-fpm | awk <span class="string">'&#123; sum+=1 &#125; END &#123; printf ("%d\n", sum) &#125;'</span>         显示某程序进程总数</div><div class="line"></div><div class="line">ps --no-headers -o <span class="string">"rss,cmd"</span> -C php-fpm | awk <span class="string">'&#123; sum+=$1 &#125; END &#123; printf ("%d%s\n", sum/NR/1024,"M") &#125;'</span>    显示某程序平均内存占用数</div><div class="line"></div><div class="line"></div><div class="line">ps --no-headers -o <span class="string">"rss,cmd"</span> -C php-fpm | awk <span class="string">'&#123; sum+=$1 &#125; END &#123; printf ("%d%s\n", sum/1024,"M") &#125;'</span></div><div class="line">     显示某程序占用内存总数</div><div class="line"></div><div class="line">ps --no-headers -o <span class="string">"rss,pcpu,cutime,cstime,utime,cmd"</span> -C redis-server  | awk <span class="string">'&#123; sum+=$1;pcpu+=$2;cutime+=$3;cstime+=$4;utime+=$5 &#125; END &#123; printf ("rss:%d%s\n pcpu:%d\n cutime:%d\n cstime:%d\n  utime:%d\n", sum/1024,"M",pcpu,cutime,cstime,utime) &#125;'</span>                显示某程序占用的资源</div></pre></td></tr></table></figure>
+        <h2 id="How-add-a-new-branch-to-save-hexo-source-code"><a href="#How-add-a-new-branch-to-save-hexo-source-code" class="headerlink" title="How add a new branch to save hexo source code"></a>How add a new branch to save hexo source code</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">cd /path/to/you/hexo</div><div class="line">git init</div><div class="line">git checkout -b sourcecode</div><div class="line">git remote add https://github.com/shushanxingzhe/shushanxingzhe.github.io.git</div><div class="line">git add .</div><div class="line">git commit -m &apos;save source code&apos;</div><div class="line">git push origin sourcecode:sourcecode</div></pre></td></tr></table></figure>
+<h2 id="Get-source-from-Github-and-add-new-blog"><a href="#Get-source-from-Github-and-add-new-blog" class="headerlink" title="Get source from Github and add new blog"></a>Get source from Github and add new blog</h2><h3 id="Clone-source"><a href="#Clone-source" class="headerlink" title="Clone source"></a>Clone source</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone -b sourcecode https://github.com/shushanxingzhe/shushanxingzhe.github.io.git github.io</div></pre></td></tr></table></figure>
+<h3 id="Update-dependency"><a href="#Update-dependency" class="headerlink" title="Update dependency"></a>Update dependency</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd github.io</div><div class="line">npm update</div></pre></td></tr></table></figure>
+<h3 id="Create-New-Blog"><a href="#Create-New-Blog" class="headerlink" title="Create New Blog"></a>Create New Blog</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;New Blog Title Here&quot;</div><div class="line">#write you blog in the source/_posts directory</div><div class="line">hexo s</div><div class="line">#run server on local,and check it</div></pre></td></tr></table></figure>
+<h3 id="Generate-and-Deploy"><a href="#Generate-and-Deploy" class="headerlink" title="Generate and Deploy"></a>Generate and Deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure>
+<h3 id="Update-source-code-to-Github"><a href="#Update-source-code-to-Github" class="headerlink" title="Update source code to Github"></a>Update source code to Github</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &apos;add new blog&apos;</div><div class="line">git push</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -332,15 +337,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/30/Useful-PHP-Extension/" rel="next" title="Useful PHP Extension">
+                <i class="fa fa-chevron-left"></i> Useful PHP Extension
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/30/Useful-PHP-Extension/" rel="prev" title="Useful PHP Extension">
-                Useful PHP Extension <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -387,8 +392,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/5352463"
@@ -430,6 +444,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-add-a-new-branch-to-save-hexo-source-code"><span class="nav-number">1.</span> <span class="nav-text">How add a new branch to save hexo source code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Get-source-from-Github-and-add-new-blog"><span class="nav-number">2.</span> <span class="nav-text">Get source from Github and add new blog</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clone-source"><span class="nav-number">2.1.</span> <span class="nav-text">Clone source</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update-dependency"><span class="nav-number">2.2.</span> <span class="nav-text">Update dependency</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-New-Blog"><span class="nav-number">2.3.</span> <span class="nav-text">Create New Blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-and-Deploy"><span class="nav-number">2.4.</span> <span class="nav-text">Generate and Deploy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update-source-code-to-Github"><span class="nav-number">2.5.</span> <span class="nav-text">Update source code to Github</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
